@@ -1,0 +1,54 @@
+body {
+    background-color: lightgrey;
+    font-family: sans-serif;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+label {
+    font-weight: 600;
+}
+
+label, input {
+    margin: 2px;
+}
+
+#event-list {
+    margin-top: 10px;
+    display: flex;
+    width: 70%;
+    height: 150px;
+    /* background-color: white; */
+
+}
+
+h1 {
+    font-size: 2rem;
+    color: darkslateblue; 
+    font-size: 1rem;
+    margin-bottom: 0;
+    order: 2;
+}
+
+img {
+    width: 125px;
+    margin: 10px;
+    
+}
+
+h2 {
+    font-size: .8rem;
+    bottom: 30px;
+    color: grey;
+    font-weight: normal;  
+
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 10px;
+}

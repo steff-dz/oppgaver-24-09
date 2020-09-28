@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppgave-3</title>
+    <link rel="stylesheet" href="./oppg-3.css">
+    <script src="./oppg-3.js" defer></script>
+</head>
+<body>
+  <!-- Lag deg et visittkort. Bruk input felter og be om følgende informasjon: fornavn, etternavn, stilling, url til et bilde av deg selv.   -->
+
+
+  <article>
+      <h1 id="dispFullName">Fornavn Etternavn</h1>
+      <p><strong>Stilling:</strong> <span id="dispTXT">Stilling</span> </p>
+      <img id="dispIMG" src="https://i.guim.co.uk/img/media/20992a75dfaf62e6a2e05b3861a15910f3b08ffb/0_241_2662_2660/master/2662.jpg?width=700&quality=85&auto=format&fit=max&s=5046bd7f97a94ca18c07b2592acb2412" style="width: 300px">
+  </article>
+
+  <div>
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="inpFullName" value="">
+
+      <label for="stilling">Stilling:</label>
+      <input type="text" id="inpStilling" value="">
+
+      <label for="inpImg">Image url:</label>
+      <input type="url" id="inpIMG" value="">
+
+      <button id="btn">SUBMIT</button>
+  </div>
+
+  
+
+</body>
+</html>

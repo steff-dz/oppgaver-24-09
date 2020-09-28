@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppgave 4</title>
+    <script src="./oppg-4.js" defer></script>
+</head>
+<body>
+    <!-- Be Brukeren o tre av hens favorittretter. Bruk input felter. 
+    A) Bygg en liste med HTML kode som viser de tre rettene.
+    B)Samme hva hen skriver skal Fiskebkoller alltid ligge på toppen av lista. -->
+
+    <h1>What are your favorite dishes?</h1>
+
+    <form id="form" action="">
+
+        <div>
+            <input id="dish-one" placeholder="dish one"type="text">
+        </div>
+        <div>
+            <input id="dish-two" placeholder="dish two" type="text" autocomplete="off">
+        </div>
+        <div>
+            <input id="dish-three" placeholder="dish three" type="text">
+        </div>
+
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+        
+        <p id="answer-list"></p>
+
+    </form>
+</body>
+</html>

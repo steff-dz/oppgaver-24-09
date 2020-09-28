@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppgave 6</title>
+    <link rel="stylesheet" href="./oppg-6.css">
+    <script src="./oppg-6.js" defer></script>
+</head>
+<body>
+    <!-- Skriv kode for en funksjon som oppretter et arrangement og legger denne til på nettsiden, omtrent som vist i bildet. Bruk input-felter for å ta i mot data, og start funksjonen med data fra input-feltene. Bruk CSS til å gjære det så likt som mulig som det er vist på bildet under.  -->
+
+    <form id="form" action="">
+        <label for="event-name">Event Name:</label>
+        <input id="event-name" type="text">
+    
+        <label for="event-date">Event Date:</label>
+        <input id="event-date" type="date">
+    
+        <label for="location">Event Location:</label>
+        <input id="location" type="text">
+    
+        <label for="event-image">Event Image:</label>
+        <input id="event-image"type="url">
+
+        <button id="btn" type="submit">Submit</button>
+    </form>
+
+    <div id="event-list">
+    </div>
+    
+    
+</body>
+</html>

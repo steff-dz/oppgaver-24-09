@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppgave 2</title>
+    <link rel="stylesheet" href="./oppg-2.css">
+</head>
+<body>
+    <!-- TASK: a) Lag en nettside som viser et bilde. La så brukeren skrive inn en url til et bilde, og sørg for at det bildet vises.
+    B) la også brukeren velge hvor bredt bildet skal være og hvilken tittel bildet skla ha
+
+https://cf.ltkcdn.net/cats/images/std/259025-699x450-gorgeous-grey-cat-breeds.jpg-->
+
+    <div>
+        <input type="image" id ="displayIMG" src="https://images.pexels.com/photos/1188410/pexels-photo-1188410.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Submit" width="250" height="">
+        <h2 id="imgTITLE">"What You Want to See"</h2>
+    </div>
+
+    <div id="input-box">
+        <label for="inpIMG">Add your own image url:</label>
+        <input type="url" id="inpIMG" value="paste url here"> 
+        
+
+        <label for="widthIMG">Set a width:</label>
+        <input id="widthIMG" type="number" value="">
+
+        <label for="imgTITLE">Name the image:</label>
+        <input type="text" id="inpTITLE" value="Title Here">
+
+        <button id="btn">GO</button>
+    </div>
+        
+    <script>
+        const inpIMG = document.querySelector("#inpIMG");
+        const displayIMG = document.querySelector("#displayIMG");
+        const BTN = document.querySelector("#btn");
+        const widthIMG = document.querySelector("#widthIMG");
+        const imgTITLE = document.querySelector("#imgTITLE");
+        const inpTITLE = document.querySelector("#inpTITLE");
+      
+
+
+        function changeIMG() {
+            displayIMG.src = inpIMG.value;
+            displayIMG.width = widthIMG.value;
+            imgTITLE.innerHTML = inpTITLE.value;
+
+        }
+
+        BTN.onclick = changeIMG;
+
+    </script>
+
+</body>
+</html>

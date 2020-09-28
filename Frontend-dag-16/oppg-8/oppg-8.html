@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppgave 8 Calculator</title>
+    <link rel="stylesheet" href="./oppg-8.css">
+</head>
+<body>
+        <input id="num-a" type="number">
+        <span>+</span>
+        <input id="num-b" type="number">
+        <span>=</span>
+        <div id="answer">
+        answer here</div>
+    
+
+    <script>
+        const numOne = document.querySelector("#num-a");
+        const numTwo = document.querySelector("#num-b");
+        const answer = document.querySelector("#answer");
+
+        function addNumbers() {
+            const a = Number(numOne.value);
+            const b = Number(numTwo.value);
+            
+            //answer.innerText = a + b;
+            const sum = a + b;
+            answer.innerText = sum;
+
+        }
+  
+        numOne.addEventListener("input", addNumbers);
+        numTwo.addEventListener("input", addNumbers);
+
+
+
+    </script>
+</body>
+</html>

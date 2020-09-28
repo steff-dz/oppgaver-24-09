@@ -1,0 +1,15 @@
+body {
+    margin: 20px;
+    width: 100vw;
+    height: 100vh;
+    font-family: sans-serif;
+    background-image: linear-gradient(lightgreen, yellow);
+}
+
+div {
+    border: 1px solid black;
+    width: 50%;
+    margin: 20px 5px 0 0;
+    height: auto;
+    padding: 10px;
+}
